@@ -12,29 +12,29 @@ const Contact = ({ id }) => {
         </h1>
         <form action="" className="w-full">
           <div className="mb-4 w-full">
-            <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
+            <label htmlFor="name" className="block text-gray-700 font-bold mb-2 dark:text-white">Name</label>
             <input
               type="text"
               id="name"
               placeholder="Name"
-              className="w-full p-2 rounded-md outline-none border border-gray-300 focus:border-blue-500"
+              className="w-full p-2 rounded-md outline-none border border-gray-300 focus:border-blue-500 bg-none dark:bg-inherit "
             />
           </div>
           <div className="mb-4 w-full">
-            <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email</label>
+            <label htmlFor="email" className="block text-gray-700 font-bold mb-2 dark:text-white">Email</label>
             <input
               type="email"
               id="email"
               placeholder="Email"
-              className="w-full p-2 rounded-md outline-none border border-gray-300 focus:border-blue-500"
+              className="w-full p-2 rounded-md outline-none border border-gray-300 focus:border-blue-500 dark:bg-inherit"
             />
           </div>
           <div className="mb-4 w-full">
-            <label htmlFor="message" className="block text-gray-700 font-bold mb-2">Message</label>
+            <label htmlFor="message" className="block text-gray-700 font-bold mb-2 dark:text-white">Message</label>
             <textarea
               id="message"
               placeholder="Message"
-              className="w-full p-2 rounded-md outline-none border h-40 resize-none border-gray-300 focus:border-blue-500"
+              className="w-full p-2 rounded-md outline-none border h-40 resize-none border-gray-300 focus:border-blue-500 dark:bg-inherit"
             ></textarea>
           </div>
           <button

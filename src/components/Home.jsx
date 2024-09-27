@@ -14,30 +14,30 @@ const Home = ({ id }) => {
         }
       };
 
-      
+
   return (
     <div
       id={id}
       className="flex-grow flex justify-between items-center w-full max-w-7xl mx-auto mt-14 px-4 py-12"
     >
       <div className="w-1/2">
-        <h1 className="text-6xl font-bold mb-4 text-gray-800">
+        <h1 className="text-6xl font-bold mb-4 text-gray-800 dark:text-white">
           Hello, I'm <span className="text-blue-600">Aum Singhal</span>
         </h1>
-        <p className="text-2xl font-normal mb-6 text-gray-600">
+        <p className="text-2xl font-normal mb-6 text-gray-600 dark:text-white">
           I'm a full stack developer
         </p>
-        <p className="text-lg font-light mb-8 text-gray-700 max-w-xl">
+        <p className="text-lg font-light mb-8 text-gray-700 max-w-xl dark:text-white">
           I am dedicated to crafting high-quality web applications, prioritizing user experience and efficient design.
         </p>
         <div className="flex gap-6 mb-8">
-          <a href="#" className="transform hover:scale-110 transition-transform duration-200">
+          <a href="#" className="transform hover:scale-110 transition-transform duration-200 dark:invert">
             <img src={linkedin} alt="LinkedIn" className="w-8 h-8" />
           </a>
-          <a href="#" className="transform hover:scale-110 transition-transform duration-200">
+          <a href="#" className="transform hover:scale-110 transition-transform duration-200 dark:invert">
             <img src={x} alt="X" className="w-8 h-8" />
           </a>
-          <a href="#" className="transform hover:scale-110 transition-transform duration-200">
+          <a href="#" className="transform hover:scale-110 transition-transform duration-200 dark:invert">
             <img src={github} alt="GitHub" className="w-8 h-8" />
           </a>
         </div>
