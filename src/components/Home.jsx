@@ -5,6 +5,16 @@ import x from "../assets/images/x.svg";
 import github from "../assets/images/github.svg";
 
 const Home = ({ id }) => {
+
+
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+      
   return (
     <div
       id={id}
@@ -32,7 +42,7 @@ const Home = ({ id }) => {
           </a>
         </div>
        <div className="flex gap-6 mb-8">
-       <button className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold transform hover:scale-110 transition-transform duration-200 hover:bg-blue-700 ">
+       <button className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold transform hover:scale-110 transition-transform duration-200 hover:bg-blue-700 " onClick={() => scrollToSection('contact')}>
           Get in touch
         </button>
         <button className="bg-blue-600 text-white px-10 py-3 rounded-full font-semibold hover:bg-blue-700 transform hover:scale-110 transition-transform duration-200">
